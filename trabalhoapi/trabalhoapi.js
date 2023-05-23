@@ -10,7 +10,7 @@ const conexao = mysql.createConnection({
   host: 'localhost',
   user: 'Ismail',
   password: 'AVUlm7hX!',
-  database: 'loja',
+  database: 'loja_dsapi',
 });
 
 // Conecta ao banco de dados
@@ -107,7 +107,7 @@ app.delete('/admin/produtos/:id', (req, res) => {
 });
 
 // Inicie o servidor
-const porta = 3000;
+const porta = 8001;
 app.listen(porta, () => {
   console.log(`Servidor rodando em http://localhost:${porta}`);
 });
